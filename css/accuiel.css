@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+   
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #E50914;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo1{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.logo{
+    height: 60px;
+}
+.logo img{
+    height: 100%;
+}
+ul{
+   display: flex;
+   list-style: none;
+   gap: 25px;
+}
+ul a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.conteneur{
+    height: 100vh;
+    width: 100%;
+    padding-left: 200px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.texte{
+    display: flex;
+}
+.texte p{
+    font-size: 50px;
+}
+.texte img{
+    height: 25px;
+    margin-top:20px ;
+}
+.barre_lien{
+    background-color: #D9D9D9;
+    width: 700px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.barre_lien input{
+    border: none;
+    width: 80%;
+    background-color: #d9d9d900;
+}
+.barre_lien button{
+    border: none;
+    background-color: #d9d9d9;
+}
+.barre_lien img{
+    height: 25px;
+}
+
+.lien_reseaux a img{
+    height: 25px;
+}
+@media (max-width: 1200px) {
+    header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .conteneur {
+        padding-left: 40px;
+        width: 100%;
+    }
+    .barre_lien {
+        width: 90%;
+        min-width: 250px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header{
+    position: fixed;
+    width: 100%;
+    
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-around;
+}
+    .logo1 {
+        display: flex;
+    }
+    .logo1 img{
+        height: 50px;
+        width: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu img {
+        height: 50px;
+        width: 50px;
+    }
+    .logo {
+        display: none;
+    }
+    ul {
+        gap: 10px;
+    }
+    nav{
+        display: none;
+    }
+    .conteneur {
+        padding: 20px;
+        gap: 10px;
+    }
+    .texte p {
+        font-size: 20px;
+    }
+    .barre_lien {
+        width: 100%;
+        min-width: unset;
+        height: 60px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .barre_lien img,
+    .lien_reseaux a img {
+        height: 18px;
+    }
+}

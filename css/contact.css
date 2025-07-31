@@ -1,0 +1,193 @@
+.bannieur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    color: #ffff;
+}
+.bannieur .gauche{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    background-color: #E11B22;
+    padding: 20px;
+    gap: 20px;
+}
+.bannieur .gauche .image{
+    height: 100px;
+    margin: 0 auto;
+}
+.bannieur .gauche .image img{
+    height: 100%;
+}
+.bannieur .gauche p{
+    text-align: justify;
+}
+.bannieur .gauche p span{
+    font-weight: bold;
+}
+.bannieur .gauche p a{
+    color: #ffff;
+    text-decoration: none;
+}
+.reseaux {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reseau {
+    display: flex;
+    gap: 20px;
+}
+.reseaux img{
+    height: 20px;
+}
+.bannieur .droite{
+    height: 500px;
+    width: 400px;
+    background-color: #1212127e;
+}
+.bannieur .droite form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+.bannieur .droite form textarea{
+   padding: 15px;
+   border: none;
+}
+.bannieur .droite form input{
+   padding: 15px;
+   border: none;
+}
+.bannieur .droite form input[type='submit'] {
+    padding: 15px;
+    border: none;
+    background-color: #E11B22;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.bannieur .droite form input[type='submit']:hover {
+    background-color: #b31318;
+}
+
+
+
+.bannieur .form{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    width: 400px;
+    background-color: #E11B22;
+    padding: 20px;
+    gap: 10px;
+}
+.form .logol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.form .logol img{
+    height: 100px;
+}
+.form .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bannieur .form p{
+    font-size: 15px;
+    text-align: justify;
+}
+.bannieur .form p span{
+    font-weight: bold;
+}
+.bannieur .form p a{
+    color: #ffff;
+    text-decoration: none;
+}
+.reseaux {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reseau {
+    display: flex;
+    gap: 20px;
+}
+.reseaux img{
+    height: 20px;
+}
+.bannieur .form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+.bannieur .form form textarea{
+   padding: 15px;
+   border: none;
+}
+.bannieur .form form input{
+   padding: 10px;
+   border: none;
+}
+.bannieur .form form input[type='submit'] {
+    padding: 15px;
+    border: none;
+    background-color: #ffffff;
+    color: #e50a0a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.bannieur .form form input[type='submit']:hover {
+    background-color: #cbcbcb;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+   
+    .bannieur {
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+        padding: 100px }
+    .bannieur .gauche,
+    .bannieur .droite{
+        display: none;
+    }
+    .bannieur .form {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 500px) {
+    
+    .bannieur .form form {
+        padding: 0px;
+        gap: 10px;
+    }
+   
+}
