@@ -1,7 +1,7 @@
 {
     "name":"Adotube",
     "short_name":"Adotube",
-    "start_url":"/index.html",
+    "start_url":"index.html",
     "display":"standalone",
     "background_color":"red",
     "theme_color":"white",
