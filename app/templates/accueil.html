@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/accuiel.css')}}">
+    <title>AdoTube</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='assets/logo/logo.png')}}"  alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="comment_ca_marche.html">Comment ça marche</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo1">
+            <img src=" {{ url_for('static', filename='assets/logo/logo1.png')}}" alt="logo1">
+        </div>
+        <div class="menu">
+            <a href="apropos.html"><img src="{{ url_for('static', filename='assets/icone/about.png')}}" alt=""></a>
+
+        </div>
+    </header>
+    <section class="conteneur">
+        <div class="texte">
+            <p>Télécharge sans pub, sans limite.</p>
+            <img src="{{ url_for('static', filename='assets/icone/arrow.png')}}" alt="">
+        </div>
+        <form action="{{ url_for('traitement') }}" method="get" class="barre_lien">
+            <img src="{{ url_for('static', filename='assets/icone/link (1).png') }}" alt="Icône lien">
+            
+            <!-- Ajout d’un attribut name pour récupérer la valeur côté Flask -->
+            <input type="text" name="lien" placeholder="Coller votre lien ici…" required>
+            
+            <!-- Le bouton doit être de type submit pour envoyer le formulaire -->
+            <button type="submit">
+                <img src="{{ url_for('static', filename='assets/icone/downloading.png') }}" alt="Télécharger">
+            </button>
+        </form>
+        <div class="lien_reseaux">
+            <a href=""><img src="{{ url_for('static', filename='assets/icone/youtube.png')}}" alt=""></a>
+            <a href=""><img src="{{ url_for('static', filename='assets/icone/tik-tok.png')}}" alt=""></a>
+            <a href=""><img src="{{ url_for('static', filename='assets/icone/social.png')}}" alt=""></a>
+            <a href=""><img src="{{ url_for('static', filename='assets/icone/facebook.png')}}" alt=""></a>
+        </div>
+    </section>
+    <section class="baremenu">
+            <ul>
+                <li class="active"><a href="accueil.html"><img src="{{ url_for('static', filename='assets/icone/homeb.png')}}" alt="ii"></a></li>
+                <li><a href="comment_ca_marche.html"><img src="{{ url_for('static', filename='assets/icone/setting.png')}}" alt=""></a></li>
+                <li><a href="contact.html"><img src="{{ url_for('static', filename='assets/icone/mobile.png')}}" alt=""></a></li>
+            </ul>
+    </section>
+</body>
+</html>
