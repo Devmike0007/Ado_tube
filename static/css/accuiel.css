@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    background: #E50914;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo1,
+.menu {
+    display: none;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+ul a:hover {
+    color: #ffd700;
+}
+
+.conteneur {
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.texte {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.texte p {
+    font-size: 50px;
+    font-weight: bold;
+    color: #222;
+}
+
+.texte img {
+    height: 30px;
+    margin-top: 30px;
+}
+
+.barre_lien {
+    background: #D9D9D9;
+    width: 800px;
+    max-width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.barre_lien input {
+    border: none;
+    width: 80%;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+.barre_lien button {
+    border: none;
+    background: #d9d9d9;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.barre_lien button:hover {
+    background: #bdbdbd;
+}
+
+.barre_lien img {
+    height: 25px;
+}
+
+.lien_reseaux a img {
+    height: 25px;
+    transition: transform 0.2s;
+}
+
+.lien_reseaux a img:hover {
+    transform: scale(1.1);
+}
+.baremenu{
+    display: none;
+   
+}
+
+
+
+
+@media (max-width: 1200px) {
+    header {
+        padding: 0 80px;
+    }
+    .conteneur {
+        padding-left: 40px;
+    }
+    .barre_lien {
+        width: 90%;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteneur {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .barre_lien {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .baremenu{
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background-color: #E50914;
+        position: fixed;
+        bottom: 0px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .baremenu ul {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background-color: #E50914;
+    }
+    .baremenu ul .active {
+        padding: 5px 10px;
+        background-color: #fff;
+        height: 40px;
+        
+        border-radius: 6px;
+    }
+    .baremenu a img {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        transition: transform 0.2s;
+    }
+ 
+    .baremenu a img:hover {
+        transform: scale(1.1);
+        filter: brightness(0.8);
+    }
+
+    header {
+        padding: 0 30px;
+        height: 60px;
+        justify-content: space-between;
+    }
+    .logo1,
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    .logo1 img,
+    .menu img {
+        height: 30px;
+        width: 30px;
+    }
+    .logo {
+        display: none;
+    }
+    ul {
+        gap: 10px;
+    }
+    nav {
+        display: none;
+    }
+    .conteneur {
+        padding: 70px 10px 10px 10px;
+        gap: 10px;
+        margin-top: 0;
+    }
+    .texte p {
+        font-size: 20px;
+    }
+    .barre_lien {
+        width: 100%;
+        min-width: unset;
+        height: 50px;
+        padding: 0 8px;
+        border-radius: 6px;
+    }
+    .barre_lien img,
+    .lien_reseaux a img {
+        height: 18px;
+    }
+}

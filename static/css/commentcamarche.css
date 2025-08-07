@@ -1,0 +1,108 @@
+main{
+    padding-left: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.titre{
+    display: flex;
+    margin-top: 120px;
+}
+.titre h2{ 
+    font-size: 40px;
+    width: 900px;
+}
+.titre h2 span{
+    font-weight: normal;
+}
+.titre img{
+    position: absolute;
+    top: 225px;
+    right: 550px;
+    height: 40px;
+}
+.tuto{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.tuto .card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 400px;
+    width: 420px;
+}
+.tuto .card h1{
+    font-size: 24px;
+    color: #E11B22;
+}
+.tuto .card p{
+    font-size: 15px;
+    width: 100%;
+}
+.tuto .card .video{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(146, 146, 146);
+}
+.tuto .card .video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 1200px) {
+    main {
+        padding-left: 40px;
+    }
+    .titre h2 {
+        width: 100%;
+        font-size: 32px;
+    }
+    .titre img {
+        right: 210px;
+        top: 125px;
+        height: 32px;
+    }
+    .tuto .card {
+        width: 320px;
+        height: 340px;
+    }
+    .tuto .card .video {
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .main{
+    margin-top: 300px;
+    padding-left: 0px;
+    padding: 10px;
+
+}
+    .titre{
+        margin-top: 0px;
+        padding: 10px;
+    }
+    .titre h2 {
+        font-size: 18px;
+    }
+    .tuto {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    .tuto .card {
+        width: 98vw;
+        max-width: 100%;
+        padding: 0 5px;
+    }
+    .tuto .card .video {
+        height: 300px;
+    }
+}

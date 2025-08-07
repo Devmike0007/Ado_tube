@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/accuiel.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/commentcamarche.css')}}">
+    <title>AdoTube</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='assets/logo/logo.png')}}" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="comment_ca_marche.html">Comment ça marche</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo1">
+            <img src="{{ url_for('static', filename='assets/logo/logo1.png')}}" alt="logo1">
+        </div>
+        <div class="menu">
+            <a href="apropos.html"><img src="{{ url_for('static', filename='assets/icone/about.png')}}" alt=""></a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="titre">
+            <h2>Avec Adotube, télécharger des vidéos devient un jeu d’enfant.? <span>Suivez ces 3 étapes simples </span></h2>
+            <img src="{{ url_for('static', filename='assets/icone/arrow.png')}}" alt="">
+        </section>
+        <section class="tuto">
+            <div class="card">
+                <h1>1. Copiez le lien</h1>
+                <p>Rendez-vous sur YouTube, TikTok, Instagram ou Facebook, et copiez le lien de la vidéo que vous souhaitez télécharger.</p>
+                <div class="video">
+                    <video src="{{ url_for('static', filename='assets/tuto/1.mp4') }}"  autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="card">
+                <h1>2. Collez dans le champ</h1>
+                <p>Revenez sur Adotube et collez le lien dans la barre prévue à cet effet sur la page d’accueil.</p>
+                <div class="video">
+                    <video src="{{ url_for('static', filename='assets/tuto/2.mp4') }}" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="card">
+                <h1> 3. Téléchargez en un clic</h1>
+                <p>Choisissez le format (vidéo ou audio, HD ou SD) puis cliquez sur Télécharger. Votre contenu est prêt !</p>
+                <div class="video">
+                    <video src="{{ url_for('static', filename='assets/tuto/3.mp4') }}" autoplay loop muted></video>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <section class="baremenu">
+            <ul>
+                <li><a href="accueil.html"><img src="{{ url_for('static', filename='assets/icone/homeb.png')}}" alt="ii"></a></li>
+                <li class="active" ><a href="comment_ca_marche.html"><img src="{{ url_for('static', filename='assets/icone/setting.png')}}" alt=""></a></li>
+                <li><a href="contact.html"><img src="{{ url_for('static', filename='assets/icone/mobile.png')}}" alt=""></a></li>
+            </ul>
+    </section>
+</body>
+</html>
