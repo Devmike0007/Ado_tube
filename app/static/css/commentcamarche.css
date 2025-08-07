@@ -12,7 +12,7 @@ main{
 }
 .titre h2{ 
     font-size: 40px;
-    width: 850px;
+    width: 900px;
 }
 .titre h2 span{
     font-weight: normal;
@@ -20,7 +20,7 @@ main{
 .titre img{
     position: absolute;
     top: 225px;
-    right: 690px;
+    right: 550px;
     height: 40px;
 }
 .tuto{
@@ -42,13 +42,18 @@ main{
     color: #E11B22;
 }
 .tuto .card p{
-    font-size: 17px;
+    font-size: 15px;
     width: 100%;
 }
 .tuto .card .video{
-    height: 300px;
+    height: 350px;
     width: 100%;
     background-color: rgb(146, 146, 146);
+}
+.tuto .card .video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 @media (max-width: 1200px) {
     main {
@@ -59,8 +64,8 @@ main{
         font-size: 32px;
     }
     .titre img {
-        right: 40px;
-        top: 200px;
+        right: 210px;
+        top: 125px;
         height: 32px;
     }
     .tuto .card {
@@ -81,6 +86,7 @@ main{
 
 }
     .titre{
+        margin-top: 0px;
         padding: 10px;
     }
     .titre h2 {
@@ -89,6 +95,7 @@ main{
     .tuto {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 100px;
     }
     .tuto .card {
         width: 98vw;

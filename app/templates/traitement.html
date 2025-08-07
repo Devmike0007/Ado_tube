@@ -30,14 +30,21 @@
     </header>
     <section class="contenu">
         <div class="gauche">
-            <video src="{{ info.url }}" controls></video>
+            <img src="{{ info.thumbnail }}" alt="">
             <a href="{{ url_for('download_video', lien=lien) }}">Télécharger la vidéo</a>
         </div>
         <div class="droite">
             <h1>Titre : {{ info.title }}</h1>
             <p>Auteur : {{ info.uploader }}</p>
             <p>Durée : {{ info.duration }} secondes</p>
-            <option value="format_video">{{ info.format }}</option>
+            <select id="formatSelect" name="format">
+                {% for f in formats %}
+                    {% set taille = (f.filesize or 0) // 1000000 %}
+                    <option value="{{ f.format_id }}">
+                        {{ f.format_id }} | {{ f.ext }} | {{ f.format_note or 'Auto' }} | {{ taille }} Mo
+                    </option>
+                {% endfor %}
+            </select>
         </div>
  
     </section>

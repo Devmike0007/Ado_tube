@@ -16,10 +16,10 @@
     flex-direction: column;
     align-items: center;
 }
-.contenu .gauche video{
+.contenu .gauche img {
     width: 100%;
-    height: 400px;
-    overflow: hidden;
+    height: 300px;
+    object-fit: cover;
 }
 .contenu .gauche a {
     width: 100%;
@@ -33,12 +33,13 @@
 }
 
 .contenu .droite {
+    width: 600px;
     display: flex;
     flex-direction: column;
     font-weight: 100;
 
 }
-option{
+select{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -59,7 +60,7 @@ option{
         width: 100%;
         align-items: stretch;
     }
-    .contenu .gauche video {
+    .contenu .gauche img {
         height: 250px;
     }
     .contenu .droite {
@@ -75,7 +76,7 @@ option{
     .contenu .droite {
         gap: 10px;
     }
-    .contenu .gauche video {
+    .contenu .gauche img {
         height: 180px;
     }
     option {
